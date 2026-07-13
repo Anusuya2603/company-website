@@ -1,0 +1,120 @@
+:root{
+  --primary:#2563eb;
+  --secondary:#0f172a;
+  --accent:#38bdf8;
+  --light:#f8fafc;
+  --dark:#020617;
+  --text:#475569;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--light);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+section{
+  padding:90px 0;
+}
+
+.container{
+  max-width:1200px;
+}
+
+h1,h2,h3,h4,h5{
+  color:var(--secondary);
+  font-weight:700;
+}
+
+p{
+  line-height:1.8;
+}
+
+.card{
+  border:none;
+  border-radius:20px;
+  transition:.4s;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.btn{
+  border-radius:50px;
+  padding:14px 34px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.navbar{
+  padding:18px 0;
+  transition:.4s;
+}
+
+.navbar-brand{
+  font-size:28px;
+  font-weight:800;
+}
+
+.nav-link{
+  font-weight:500;
+  margin-left:20px;
+  transition:.3s;
+}
+
+.nav-link:hover{
+  color:var(--accent)!important;
+}
+
+footer{
+  background:#081120;
+  color:white;
+}
+/* ================= NAVBAR ================= */
+
+.navbar {
+  background: rgba(255,255,255,.95) !important;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #2563eb;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: .3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
