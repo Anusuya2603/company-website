@@ -11,7 +11,7 @@ function Footer() {
         <hr className="border-light" />
 
         <p className="mb-0">
-          © 2026 Anusuya from AI&DS . All Rights Reserved.
+          © 2026 Anusuya . All Rights Reserved.
         </p>
       </div>
     </footer>
